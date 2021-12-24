@@ -40,7 +40,7 @@ namespace Örneks
             // dtpTarih
             // 
             this.dtpTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dtpTarih.Location = new System.Drawing.Point(200, 67);
+            this.dtpTarih.Location = new System.Drawing.Point(113, 55);
             this.dtpTarih.Name = "dtpTarih";
             this.dtpTarih.Size = new System.Drawing.Size(323, 30);
             this.dtpTarih.TabIndex = 0;
@@ -48,7 +48,7 @@ namespace Örneks
             // lblDogumTarihi
             // 
             this.lblDogumTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDogumTarihi.Location = new System.Drawing.Point(269, 19);
+            this.lblDogumTarihi.Location = new System.Drawing.Point(168, 19);
             this.lblDogumTarihi.Name = "lblDogumTarihi";
             this.lblDogumTarihi.Size = new System.Drawing.Size(200, 33);
             this.lblDogumTarihi.TabIndex = 1;
@@ -57,18 +57,19 @@ namespace Örneks
             // btnHesapla
             // 
             this.btnHesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHesapla.Location = new System.Drawing.Point(299, 119);
+            this.btnHesapla.Location = new System.Drawing.Point(173, 114);
             this.btnHesapla.Name = "btnHesapla";
             this.btnHesapla.Size = new System.Drawing.Size(137, 46);
             this.btnHesapla.TabIndex = 2;
             this.btnHesapla.Text = "Hesapla";
             this.btnHesapla.UseVisualStyleBackColor = true;
+            this.btnHesapla.Click += new System.EventHandler(this.btnHesapla_Click);
             // 
             // lblYas
             // 
             this.lblYas.AutoSize = true;
             this.lblYas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblYas.Location = new System.Drawing.Point(228, 205);
+            this.lblYas.Location = new System.Drawing.Point(107, 215);
             this.lblYas.Name = "lblYas";
             this.lblYas.Size = new System.Drawing.Size(124, 31);
             this.lblYas.TabIndex = 3;
@@ -78,7 +79,7 @@ namespace Örneks
             // 
             this.lblGun.AutoSize = true;
             this.lblGun.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblGun.Location = new System.Drawing.Point(194, 270);
+            this.lblGun.Location = new System.Drawing.Point(51, 259);
             this.lblGun.Name = "lblGun";
             this.lblGun.Size = new System.Drawing.Size(233, 31);
             this.lblGun.TabIndex = 5;
@@ -88,7 +89,7 @@ namespace Örneks
             // 
             this.lblBurc.AutoSize = true;
             this.lblBurc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBurc.Location = new System.Drawing.Point(217, 336);
+            this.lblBurc.Location = new System.Drawing.Point(80, 314);
             this.lblBurc.Name = "lblBurc";
             this.lblBurc.Size = new System.Drawing.Size(151, 31);
             this.lblBurc.TabIndex = 7;
@@ -98,15 +99,18 @@ namespace Örneks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(465, 370);
             this.Controls.Add(this.lblBurc);
             this.Controls.Add(this.lblGun);
             this.Controls.Add(this.lblYas);
             this.Controls.Add(this.btnHesapla);
             this.Controls.Add(this.lblDogumTarihi);
             this.Controls.Add(this.dtpTarih);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Burc Gün Yaş Hesapla";
             this.ResumeLayout(false);
             this.PerformLayout();
 
